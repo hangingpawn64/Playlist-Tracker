@@ -1,0 +1,39 @@
+.yt-checkbox {
+    margin-right: 10px;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+#yt-progress-circle {
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    z-index: 9999;
+}
+
+.progress-ring {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: conic-gradient(#00c853 0deg, #ddd 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: black;
+    position: relative;
+}
+
+/* Inner circle (to make it look like a ring) */
+.progress-ring::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#progress-text {
+    position: absolute;
+    font-size: 16px;
+}
